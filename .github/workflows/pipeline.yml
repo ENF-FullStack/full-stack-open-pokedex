@@ -18,6 +18,6 @@ jobs:
       - name: lint
         run: npm run eslint
       - name: build
-        run: NODE_OPTIONS=--openssl-legacy-provider npx webpack --mode production
+        run: npm run legacy
       - name: test
         run: npm run test
