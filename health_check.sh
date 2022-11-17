@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "Hello from shell script"
+echo "Health Check sh"
 
 exit 1
