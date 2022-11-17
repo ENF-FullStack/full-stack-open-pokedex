@@ -1,10 +1,9 @@
 #!/bin/bash
 
-RES=$(curl https://white-sky-5236.fly.dev/health -s)
+res=$(curl -s https://white-sky-5236.fly.dev/health)
 
-if [ "$RES" == "ok" ];
-then
-  echo="Succeeded to curl to /health"
+if [ "$res" == "ok" ]; then
+  echo "Succeeded to curl to /health"
   exit 0
 fi
 
