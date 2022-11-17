@@ -2,4 +2,4 @@
 
 echo "Health Check sh"
 
-exit 1
+exit 0
