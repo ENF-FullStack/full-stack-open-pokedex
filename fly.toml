@@ -17,7 +17,7 @@ kill_timeout = 5
   app = "node app.js"
 
 [[services]]
-  http_checks = []
+#  http_checks = []
   internal_port = 8080
   processes = ["app"]
   protocol = "tcp"
