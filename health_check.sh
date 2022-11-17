@@ -2,7 +2,7 @@
 
 HEALTH=$(curl https://white-sky-5236.fly.dev/health -s)
 
-OK="OK"
+OK="ok"
 echo $HEALTH
 
 if [ "$HEALTH" = "$OK" ];
