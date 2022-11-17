@@ -11,7 +11,7 @@ app.get('/health', (req, res) => {
 })
 
 app.get('/version', (req, res) => {
-  res.send('1.0.7')
+  res.send('1.0.8')
 })
 
 // run server
