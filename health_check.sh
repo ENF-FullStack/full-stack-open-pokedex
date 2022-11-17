@@ -1,5 +1,15 @@
 #!/bin/bash
 
-echo "Health Check sh"
+HEALTH=$(curl https://white-sky-5236.fly.dev/health -s)
 
-exit 0
+OK="OK"
+echo $HEALTH
+
+if [ "$HEALTH" = "$OK" ];
+then
+  echo=$OK
+  exit
+fi
+
+echo "Health Check: NOT OK"
+exit 1
