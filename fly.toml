@@ -53,9 +53,9 @@ kill_timeout = 5
     tsl_skip_verify = false
     [services.http_checks.headers]
 
-  [[services.script_checks]]
-    command = "/app/health_check.sh"
-    grace_period = "10s"
-    interval = "5s"
-    restart_limit = 0
-    timeout = "5s"
+#  [[services.script_checks]]
+#    command = "/app/health_check.sh"
+#    grace_period = "10s"
+#    interval = "5s"
+#    restart_limit = 0
+#    timeout = "5s"
