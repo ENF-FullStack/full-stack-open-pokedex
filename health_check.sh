@@ -1,14 +1,11 @@
 #!/bin/bash
 
-HEALTH=$(curl https://white-sky-5236.fly.dev/health -s)
+RES=$(curl https://white-sky-5236.fly.dev/health -s)
 
-OK="ok"
-echo $HEALTH
-
-if [ "$HEALTH" = "$OK" ];
+if [ "$RES" == "ok" ];
 then
-  echo=$OK
-  exit
+  echo="Succeeded to curl to /health"
+  exit 0
 fi
 
 echo "Health Check: NOT OK"
