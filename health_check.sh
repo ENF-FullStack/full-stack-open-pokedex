@@ -10,5 +10,5 @@ if [ "$res" = "ok" ]; then
   exit 0
 fi
 
-echo "Health Check: NOT OK!"
+echo "Health Check: NOT OK"
 exit 1
