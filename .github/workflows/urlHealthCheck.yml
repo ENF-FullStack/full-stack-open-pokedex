@@ -8,7 +8,7 @@ jobs:
   scheduled_health_check:
     runs-on: ubuntu-20.4
     steps:
-      - name: Verify deployment URL
+      - name: Verify URL with deployment
         uses: jtalk/url-health-check-action@v3
         with:
           url: https://white-sky-5236.fly.dev
