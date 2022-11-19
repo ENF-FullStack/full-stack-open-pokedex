@@ -11,4 +11,7 @@ if [ "$res" = "ok" ]; then
 fi
 
 echo "Health Check: NOT OK!"
+<<<<<<< HEAD
+=======
+>>>>>>> b4ef15ac6ca641d9450365e470de578582e627d3
 exit 1
