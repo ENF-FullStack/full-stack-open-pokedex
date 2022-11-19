@@ -3,7 +3,7 @@ name: Health Check
 on:
   schedule:
     - cron: '15 * * * *'
-  
+
 jobs:
   scheduled_health_check:
     runs-on: ubuntu-20.4
